@@ -1,0 +1,41 @@
+name: Feature Request
+description: Suggest a new feature or improvement
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Got an idea? We'd love to hear it. Please describe what you're looking for.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Motivation
+      description: What problem does this solve, or what need does it address?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe what you'd like to see built or changed.
+    validations:
+      required: true
+  - type: dropdown
+    id: protocol
+    attributes:
+      label: Related Protocol
+      options:
+        - SAML
+        - OIDC
+        - Both
+        - Not protocol-specific
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you tried working around this? Any other approaches?
+    validations:
+      required: false
